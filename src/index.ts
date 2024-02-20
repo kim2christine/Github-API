@@ -1,14 +1,3 @@
-import { logger } from './core/logger.service';
+import { getGitHubUserInfo } from './get-github-user-info';
 
-logger.info('Entered index.ts');
-
-/**
- * Sum two numbers.
- *
- * @param a first number for summation.
- * @param b second number for summation.
- * @returns Sum of parameters.
- */
-export function sum(a: number, b: number): number {
-  return a + b;
-}
+getGitHubUserInfo('kim2christine');
